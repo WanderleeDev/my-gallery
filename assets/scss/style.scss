@@ -1,3 +1,7 @@
 @use '../scss/base/reset.scss' as *;
 @use '../scss/base/typography.scss' as *;
 @use '../scss/utils/shared.scss' as *;
+
+.hero{
+  font-family: 'Montserrat' sans-serif;
+}

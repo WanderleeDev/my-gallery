@@ -167,5 +167,8 @@ main{
   @include flex(flex, row, wrap, space-around, center, 1rem);
 }
 */
+.hero {
+  font-family: "Montserrat" sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
