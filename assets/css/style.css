@@ -169,10 +169,11 @@ main{
 */
 .hero {
   max-width: 61.25rem;
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-inline: auto;
   display: grid;
   place-items: center;
+  gap: 2.5rem;
 }
 
 .header {
@@ -183,7 +184,7 @@ main{
 }
 .header .personalCard-photo {
   aspect-ratio: 1/1;
-  width: min(30vw, 12rem);
+  width: min(30vw, 11.5rem);
   margin-inline: auto;
   border-radius: 1rem;
 }
@@ -191,7 +192,7 @@ main{
   text-align: center;
 }
 .header .personalCard-name {
-  font-size: min(1.5rem, 4.5vw);
+  font-size: min(1.7rem, 4.5vw);
   color: #4E5150;
   font-weight: 600;
   padding-top: 0.5rem;
@@ -234,13 +235,14 @@ main{
 
 .gallery {
   display: grid;
-  gap: min(2vw, 2rem);
+  gap: min(3vw, 2rem);
   padding: 1rem;
   grid-template-areas: "photo1 photo2 photo2" "photo3 photo3 photo4" "photo5 photo6 photo4";
 }
 .gallery-img {
   height: 100%;
   border-radius: 0.75rem;
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.24);
 }
 .gallery-img:hover {
   opacity: 0.8;
