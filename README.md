@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://recipe-page-master-livid.vercel.app/">
+    <a href="https://my-gallery-lac.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/Il56y3Zu5dRZ6rDG9U6o">
+    <a href="https://devchallenges.io/solutions/ZV1gxixWrJu0DzH1Ubq8">
       Solution
     </a>
     <span> | </span>
@@ -62,6 +62,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://recipe-page-master-livid.vercel.app)
+- Website [your-website.com](https://my-gallery-lac.vercel.app/)
 - GitHub [WanderleeDev](https://github.com/WanderleeDev)
 - LinkeDin [Wanderlee Max Gutierrez Gamboa](https://www.linkedin.com/in/wanderlee-max/)
