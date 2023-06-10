@@ -3,5 +3,120 @@
 @use '../scss/utils/shared.scss' as *;
 
 .hero{
+  max-width: rem(980);
   font-family: 'Montserrat' sans-serif;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+.header{
+  display: grid;
+  place-items: center;
+  place-content: center;
+  margin-top: 2rem;
+  .personalCard{
+    
+    &-photo{
+      aspect-ratio: 1/1;
+      width: min(30vw, 12rem);
+      margin-inline: auto;
+      border-radius: rem(16);
+    }
+    
+    &-data{
+      text-align: center;
+    }
+    
+    &-name{
+      font-size: min(1.5rem, 4.5vw);
+      color: #4E5150;
+      font-weight: 600;
+      padding-top: .5rem;
+    }
+    
+    &-location{
+      display: inline-block;
+      color:  #A9A9A9;
+      font-size: min(.8rem, 3.3vw);
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .subCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .smallCard{
+    display: grid;
+    place-items: center;
+    width: min(22vw, 6.2rem);
+    padding: .7rem .5rem; 
+    background-color: #E5E5E5;
+    color: #4E5150;
+    margin-inline: auto;
+    text-align: center;
+    border-radius: .8rem;
+    gap: .3rem;
+    font-size: min(.9rem, 3.3vw);
+    
+    &-number{
+      font-weight: 600;
+      line-height: rem(14.63);
+    }
+
+    &-text{
+      font-size: min(.8rem, 3.3vw);
+      font-weight: 600;
+      line-height: rem(14.63);
+      color: #BDBDBD;
+    }    
+  }
+}
+
+.gallery{
+  display: grid;
+  gap: min(2vw,2rem);
+  padding: 1rem;
+  grid-template-areas:
+  "photo1 photo2 photo2"
+  "photo3 photo3 photo4"
+  "photo5 photo6 photo4";
+
+  &-img{
+    height: 100%;
+    border-radius: rem(12);
+
+    &:hover{
+      opacity: 0.8;
+    }
+
+    @for $i from 1 through 6 {
+    
+      &:nth-child(#{$i}){
+        grid-area: photo#{$i};
+      }
+    }
+  }
+  
+}
+
+.footer{
+  padding: 1rem;
+  grid-row: 8/9;
+  text-align: center;
+
+  &-info{
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  &-autor{
+    color: var(--blanco);
+    text-decoration: underline;
+  }
 }

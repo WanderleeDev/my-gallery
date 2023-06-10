@@ -27,7 +27,6 @@ const Gallery = () => {
     }
   ]
   
-
   const tempContainer = `
     <div class="gallery">
       ${
@@ -35,12 +34,14 @@ const Gallery = () => {
           const { imagen, alt} = img;
 
           return(`
-            <img loading="lazy" src=${imagen} alt=${alt}>
-          `).join('');
-        }).trim()
+            <img class="gallery-img" loading="lazy" src=${imagen} alt='${alt}' >
+          `)
+        }).join("")
       }
     </div>
   `;
 
-  return tempContainer
+  return tempContainer.trim()
 }
+
+export default Gallery

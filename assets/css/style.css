@@ -168,7 +168,115 @@ main{
 }
 */
 .hero {
+  max-width: 61.25rem;
   font-family: "Montserrat" sans-serif;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  margin-top: 2rem;
+}
+.header .personalCard-photo {
+  aspect-ratio: 1/1;
+  width: min(30vw, 12rem);
+  margin-inline: auto;
+  border-radius: 1rem;
+}
+.header .personalCard-data {
+  text-align: center;
+}
+.header .personalCard-name {
+  font-size: min(1.5rem, 4.5vw);
+  color: #4E5150;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+.header .personalCard-location {
+  display: inline-block;
+  color: #A9A9A9;
+  font-size: min(0.8rem, 3.3vw);
+  margin: 0 0 1rem 0;
+}
+.header .subCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.header .smallCard {
+  display: grid;
+  place-items: center;
+  width: min(22vw, 6.2rem);
+  padding: 0.7rem 0.5rem;
+  background-color: #E5E5E5;
+  color: #4E5150;
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 0.8rem;
+  gap: 0.3rem;
+  font-size: min(0.9rem, 3.3vw);
+}
+.header .smallCard-number {
+  font-weight: 600;
+  line-height: 0.914375rem;
+}
+.header .smallCard-text {
+  font-size: min(0.8rem, 3.3vw);
+  font-weight: 600;
+  line-height: 0.914375rem;
+  color: #BDBDBD;
+}
+
+.gallery {
+  display: grid;
+  gap: min(2vw, 2rem);
+  padding: 1rem;
+  grid-template-areas: "photo1 photo2 photo2" "photo3 photo3 photo4" "photo5 photo6 photo4";
+}
+.gallery-img {
+  height: 100%;
+  border-radius: 0.75rem;
+}
+.gallery-img:hover {
+  opacity: 0.8;
+}
+.gallery-img:nth-child(1) {
+  grid-area: photo1;
+}
+.gallery-img:nth-child(2) {
+  grid-area: photo2;
+}
+.gallery-img:nth-child(3) {
+  grid-area: photo3;
+}
+.gallery-img:nth-child(4) {
+  grid-area: photo4;
+}
+.gallery-img:nth-child(5) {
+  grid-area: photo5;
+}
+.gallery-img:nth-child(6) {
+  grid-area: photo6;
+}
+
+.footer {
+  padding: 1rem;
+  grid-row: 8/9;
+  text-align: center;
+}
+.footer-info {
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-autor {
+  color: var(--blanco);
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
